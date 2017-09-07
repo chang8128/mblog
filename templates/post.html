@@ -1,0 +1,14 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+{% block title %} 文学天地 {% endblock %}
+{% block headmessage %}
+    <h3 style='font-family:苹方;'>{{ post.title}}</h3>
+    <a style='font-family:苹方;' href='/'>回首页</a>
+{% endblock %}
+{% block content %}
+    {% for post in posts %}
+        <p style='font-family:苹方;font-size:12pt;letter-spacing:2pt;'>
+	        {{ post.body }}
+        </p>
+    {% endfor %}
+{% endblock %}

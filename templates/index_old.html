@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>
+	    欢迎光临骑士桥空间
+	</title>
+</head>
+<body>
+	<h1>欢迎光临骑士桥空间</h1>
+	<hr>
+	{% for post in posts %}
+	    <p style='font-family:苹方;font-size:16pt;font-weight:bold;'>
+		    <a href='/post/{{post.slug}}'>{{post.title}}></a>
+	    </p>
+	{% endfor %}
+	<hr>
+	<h3>现在上海时间：{{ now }}</h3>
+</body>
+</html>
